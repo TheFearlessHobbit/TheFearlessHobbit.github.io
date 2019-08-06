@@ -37,7 +37,7 @@ body
     text-align: justify;
 }    
 
-#sectionA-Title
+#sectionA-Title, #sectionB-Title
 {
     font-size: 30px;
     line-height: 1.7;
@@ -55,6 +55,27 @@ body
     background-size: cover;
     background-position: center; 
     height: 100vh;     
+}
+
+#sectionB-Content
+{
+    background-color: rgb(0, 10, 26);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 30px;
+    height: 12vh;     
+}
+
+.copyRight
+{
+    color: white;
+    font-size: 11px;
+}
+
+.icons
+{
+    width: 7%;
 }
 
 .row 
