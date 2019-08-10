@@ -67,17 +67,6 @@ body
     height: 12vh;     
 }
 
-.copyRight
-{
-    color: white;
-    font-size: 11px;
-}
-
-.icons
-{
-    width: 3%;
-}
-
 .row 
 {
     display: flex;
@@ -88,8 +77,12 @@ body
     flex: 33.33%;
     padding: 25px 50px;
     font-size: 12px;
+
+    position: relative;
+    top: 0;
+    left: 0;
 }
-  
+
 h1 
 {
     color: white;
@@ -106,6 +99,23 @@ a
     color: orange;
 }
 
+.container
+{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 1.0em;
+}
+
+.container img
+{
+    transition: 0.29s ease-in-out;
+}
+
+.container img:hover
+{
+    transform: scale(1.1);
+}
+
 .zoom 
 {
     transition: transform 0.2s;
@@ -114,4 +124,47 @@ a
 .zoom:hover 
 {
    transform: scale(1.1); 
+}
+
+.logo
+{
+    position: absolute;
+    top: 32px;
+    left: 60px;
+    width: 6%;
+}
+
+.secondaryLogo
+{
+    position: absolute;
+    top: 35px;
+    left: 105px;
+    width: 15%;
+}
+
+.zoom-logo
+{
+    transition: transform 0.5s, filter 1.1s ease-out;
+}
+
+.zoom-logo:hover
+{
+    transform: scale(1.5);
+}
+
+.icons
+{
+    width: 3%;
+    transition: transform 0.2s;
+}
+
+.icons:hover
+{
+   transform: scale(1.1); 
+}
+
+.copyRight
+{
+    color: white;
+    font-size: 11px;
 }
