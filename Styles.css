@@ -21,7 +21,7 @@ body
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 30px;
+    padding: 0 30%;
 }
 
 #AboutMe h1
@@ -32,8 +32,8 @@ body
 
 #AboutMe p
 {
-    font-size: 16px;
-    width: 90vh;
+    width: 150%;
+    font-size: 2vh;
     text-align: justify;
 }    
 
@@ -54,7 +54,6 @@ body
     background-color: rgb(7, 11, 52);
     background-size: cover;
     background-position: center; 
-    height: 100vh;     
 }
 
 #sectionB-Content
@@ -70,17 +69,15 @@ body
 .row 
 {
     display: flex;
+    flex-wrap: wrap;
 }
   
 .column 
 {
-    flex: 33.33%;
+    flex: 25%;
     padding: 25px 50px;
     font-size: 12px;
-
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 h1 
@@ -167,4 +164,22 @@ a
 {
     color: white;
     font-size: 11px;
+}
+
+@media screen and (max-width: 601px) 
+{
+    .column 
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) 
+{
+    .column
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
